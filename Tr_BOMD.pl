@@ -135,13 +135,13 @@ for (my $i=0; $i < scalar (@value_energy_sort); $i=$i+$time_step){
 	#
 	my $convert_pico_second = ($value_energy_sort[$i] / 1000);
 	#
-	print EKinC      "$convert_pico_second\t".(27.2114 * $EKinC[$i]).     "\n"; 
-	print EKinPA     "$convert_pico_second\t".(27.2114 * $EKinPA[$i]).    "\n";
-	print EKinPB     "$convert_pico_second\t".(27.2114 * $EKinPB[$i]).    "\n";
-	print EKin       "$convert_pico_second\t".(27.2114 * $EKin[$i]).      "\n";
-	print EPot       "$convert_pico_second\t".(27.2114 * $EPot[$i]).      "\n";
-	print ETot       "$convert_pico_second\t".(27.2114 * $ETot[$i]).      "\n";
-	print ETot_EKinP "$convert_pico_second\t".(27.2114 * $ETot_EKinP[$i])."\n";
+	print EKinC      "$convert_pico_second\t".($EKinC[$i]).     "\n"; 
+	print EKinPA     "$convert_pico_second\t".($EKinPA[$i]).    "\n";
+	print EKinPB     "$convert_pico_second\t".($EKinPB[$i]).    "\n";
+	print EKin       "$convert_pico_second\t".($EKin[$i]).      "\n";
+	print EPot       "$convert_pico_second\t".($EPot[$i]).      "\n";
+	print ETot       "$convert_pico_second\t".($ETot[$i]).      "\n";
+	print ETot_EKinP "$convert_pico_second\t".($ETot_EKinP[$i])."\n";
 	# 1 Hartree = 27,2114 ev
 	# 1 Hartree = 627,509 Kcal/mol	
 	my $eV      = sprintf("%06f",(27.2114 * $EPot[$i] ));
